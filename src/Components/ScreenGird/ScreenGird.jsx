@@ -32,7 +32,6 @@ const ScreenGird = (props) => {
                 onRowAdd: (newData) =>
                     new Promise((resolve) => {
                         setTimeout(() => {
-                            alert(props.mod_id);
                             axios({
                                 method: 'post',
                                 url:'http://172.16.1.102:6060/api/v1/crud',
